@@ -11,7 +11,8 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-ContactManager-fe01c60a-d8ec-4a31-b766-d4ba9265a02c")]
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-ContactManager-c97cd6d9-4390-4d72-9444-7d068b9d85ae")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("ContactManager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

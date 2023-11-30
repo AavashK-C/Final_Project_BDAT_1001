@@ -7,13 +7,15 @@ namespace ContactManager.Data
 {
     public static class SeedData
     {
-        public static async Task Initialize(IServiceProvider serviceProvider, string testUserPw="")
+        public static async Task<Task> Initialize(IServiceProvider serviceProvider, string testUserPw = "")
         {
             using (var context = new ApplicationDbContext(
                 serviceProvider.GetRequiredService<DbContextOptions<ApplicationDbContext>>()))
             {
                 SeedDB(context, testUserPw);
             }
+
+            return Task.CompletedTask;
         }
 
         public static void SeedDB(ApplicationDbContext context, string adminID)
